@@ -12,9 +12,9 @@ from check_file import get_max
 def parse_args():
     parser = argparse.ArgumentParser(description="Start DroidBot to test an Android app.",
                                      formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument("-a", action="store", dest="apk_path", required=False, default='../com.smorgasbork.hotdeath_11.apk',
+    parser.add_argument("-a", action="store", dest="apk_path", required=True,
                         help="The file path to target APK")
-    parser.add_argument("-o", action="store", dest="output_dir", default='output_test_1_1000/',
+    parser.add_argument("-o", action="store", dest="output_dir",
                         help="directory of output")
     parser.add_argument("-policy", action="store", dest="input_policy", default='gym')
 
